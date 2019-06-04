@@ -81,7 +81,7 @@ GROUP_END = 20
 
 if  __name__ == "__main__":
     pool = Pool()
-    pool.map(main, [i*20 for i in range(1)])
+    pool.map(main, [i*20 for i in range(10)])
     pool.close()
     pool.join()
     print("OK")
